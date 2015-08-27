@@ -1,3 +1,15 @@
+tlp (0.8.900-1) unstable; urgency=low
+
+  * Development package
+
+  [Thomas Koch]
+  * debian/rules: add 'make clean' to clean target
+  * debian/tlp.maintscript:
+    - add rm_conffile /etc/acpi/events/thinkpad-radiosw,
+      /etc/acpi/thinkpad-radiosw.sh (upstream removed feature)
+
+ -- Thomas Koch <linrunner@gmx.net>  Tue, 27 Aug 2015 22:57:59 +0200
+
 tlp (0.8-1) unstable; urgency=low
 
   * New upstream release
