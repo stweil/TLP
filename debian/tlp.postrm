@@ -25,14 +25,6 @@ case "$1" in
         for i in /etc/init/rfkill-*.override; do
             [ ! -f "$i" ] || rm -f $i
         done
-
-        # Unmask conflicting systemd services
-        for i in systemd-rfkill@.service; do
-            if [ "$( readlink ${ESY}/${i} )" = "$NUL" ]; then
-                # Service is masked --> unmask service
-                rm ${ESY}/${i}
-            fi
-        done
         ;;
 
 esac

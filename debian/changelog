@@ -9,8 +9,9 @@ tlp (0.8.900-1) unstable; urgency=low
       /etc/acpi/thinkpad-radiosw.sh (upstream removed feature)
   * debian/tlp.postinst,tlp.postrm:
     - upstream moved tlp-nop to /usr/share/tlp-pm/
+    - remove systemd-rfkill@.service mask/unmask
 
- -- Thomas Koch <linrunner@gmx.net>  Fri, 28 Aug 2015 20:16:42 +0200
+ -- Thomas Koch <linrunner@gmx.net>  Fri, 25 Dec 2015 21:42:12 +0200
 
 tlp (0.8-1) unstable; urgency=low
 
